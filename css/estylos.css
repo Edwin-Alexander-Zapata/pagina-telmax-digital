@@ -56,3 +56,7 @@ header{
     border-radius: 5px;
     display: none;
 }
+/*  Vercion movill */
+@media screen and (max-width:768px){
+    
+}
