@@ -5,4 +5,54 @@
     --Col_marron: #8C3414;
     --Col_whitelx: #F2F2F2;
     --Col_blacktelx: #262626;
+    --Col_blacklog: #202020;
+}
+*{
+    margin: 0;
+    padding: 0
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Col_whitelx);
+}
+header{
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    top: 0;
+    left: 0;
+    background-color: var(--Col_blacklog);
+}
+/* items del menu prinsipal */
+.cont_menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.items{
+    display: flex;
+}
+.menu_items, a{
+    list-style: none;
+    text-decoration: none;
+    margin: 0 8px;
+    color: var(--Col_whitelx);
+    position: relative;
+}
+/* arreglar el detalle del desnible del hover */
+.menu_items:hover,
+.item_active{
+    background-color: var(--Col_orang);
+    padding: 5px 0;
+    border-radius: 5px;
+    transition: all .3s;
+}
+/* items del sub menu */
+
+/* icono movil */
+.icon_nav{
+    font-size: 30px;
+    border: 1px solid var(--Col_orang);
+    border-radius: 5px;
+    display: none;
 }
