@@ -134,7 +134,7 @@
       flex-wrap: nowrap;
       flex-direction: column;
       align-content: center;
-      align-items: flex-start;
+      align-menu: flex-start;
   }
   
   .display__none
@@ -149,7 +149,7 @@
       justify-content: center;
       padding: 70px 0;
       position: relative;
-      align-items: center;
+      align-menu: center;
       align-content: center;
   }
   
@@ -323,7 +323,7 @@
       flex-direction: column;
       flex-wrap: nowrap;
       justify-content: center;
-      align-items: stretch;
+      align-menu: stretch;
       align-content: center;
       /*margin-top: 27px;*/
       text-align: center;
@@ -378,7 +378,7 @@
       flex-direction: row;
       flex-wrap: nowrap;
       justify-content: space-between;
-      align-items: center;
+      align-menu: center;
       align-content: center;
       min-height: 110px;
   }
@@ -416,7 +416,7 @@
       flex-direction: row;
       flex-wrap: nowrap;
       justify-content: flex-end;
-      align-items: center;
+      align-menu: center;
       align-content: center;
       list-style: none;
       padding: 0;
@@ -447,7 +447,7 @@
       flex-direction: row;
       flex-wrap: nowrap;
       justify-content: flex-end;
-      align-items: center;
+      align-menu: center;
       align-content: center;
   }
   .hero__wrap {
@@ -529,7 +529,7 @@
   
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-menu: center;
       justify-content: center;
   
       width: 100%;
@@ -641,7 +641,7 @@
       align-content: center;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
+      align-menu: center;
       flex-wrap: wrap;
   }
   
@@ -699,7 +699,7 @@
       .frontpage__links {
           display: flex;
           flex-flow: row nowrap;
-          align-items: flex-start;
+          align-menu: flex-start;
           justify-content: space-between;
           text-align: center;
           max-width: 700px;
@@ -809,7 +809,7 @@
           align-content: space-around;
           flex-direction: row;
           justify-content: space-between;
-          align-items: center;
+          align-menu: center;
       }
       .col__50 {
           max-width: 50%;

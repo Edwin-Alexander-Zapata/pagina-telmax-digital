@@ -1,3 +1,9 @@
+/* @font-face {
+    font-family: font-telmax;
+    src: url(/assets/webfonts/fa-brands-400.ttf);
+    src: url(/assets/webfonts/fa-brands-400.eot);
+    src: url(/assets/webfonts/fa-regular-400.woff2)
+} */
 /* phantone telmex */
 :root{
     --Col_coffi: #F2B988;
@@ -6,57 +12,117 @@
     --Col_whitelx: #F2F2F2;
     --Col_blacktelx: #262626;
     --Col_blacklog: #202020;
+    --font_telmax: 'Open Sans', sans-serif;
 }
 *{
-    margin: 0;
-    padding: 0
     box-sizing: border-box;
 }
 body{
+    font-family: var(--font_telmax);
     background-color: var(--Col_whitelx);
+    margin: 0;
 }
 header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     position: fixed;
-    width: 100%;
-    padding: 10px 0;
+    /* padding: 5px 0; */
     top: 0;
-    left: 0;
+    width: 100%;
     background-color: var(--Col_blacklog);
 }
-/* items del menu prinsipal */
+/* menu del menu prinsipal */
 .cont_menu{
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-menu: center;
 }
-.items{
+.menu{
     display: flex;
 }
-.menu_items, a{
-    list-style: none;
-    text-decoration: none;
-    margin: 0 8px;
-    color: var(--Col_whitelx);
+.active{
+    background-color: var(--Col_orang);
+    padding: 5px;
+    border-radius: 5px;
+}
+.menu_item{
     position: relative;
 }
-/* arreglar el detalle del desnible del hover */
-.menu_items:hover,
-.item_active{
-    background-color: var(--Col_orang);
-    padding: 5px 0;
-    border-radius: 5px;
-    transition: all .3s;
+.menu, .submenu{
+    list-style: none;
 }
-/* items del sub menu */
-
-/* icono movil */
+.menu_item, .menu_link{
+    text-decoration: none;
+    color: aliceblue;
+    margin:  8px;
+}
+.submenu{
+    position: absolute; 
+    padding: 10px 50px ;
+    border-radius: 5px;
+    display: none;
+    background-color: var(--Col_blacktelx)
+    /* TODO: INVESTIGAR POR EL MARGIN INABILITA LAS OPCIONES DEL MENU */
+}
+.menu_item:hover .submenu{
+    display: block;
+}
+.lnk2{
+    margin: 10px 0;
+}
+.menu_link:hover{
+    background-color: var(--Col_orang);
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.4s;
+}
 .icon_nav{
     font-size: 30px;
     border: 1px solid var(--Col_orang);
     border-radius: 5px;
     display: none;
 }
+
 /*  Vercion movill */
-@media screen and (max-width:768px){
-    
+@media screen and (max-width: 768px){
+
+    .icon_nav{
+        display: block;
+    }
+    .menu{
+        flex-direction: column;
+        position:fixed;
+        left: 0;
+        top: 70px;
+        width: 100%;
+        height: 50vh;
+        padding: 20 0px;
+        margin-left: -100%;
+        background-color: var(--Col_blacklog);
+        transition:  all 0.5s;
+    }
+    .ver{
+        margin-left: 0;
+    }
+    .menu_item{
+        margin:  5px 0;
+    }
+    .submenu{
+        width: 100%;
+        margin: 0 ;
+        padding: 2px 20px;
+        display: block;
+        position: relative;
+        border-radius: 0px;
+        border-top: 1px solid var(--Col_orang);
+        background-color: var(--Col_blacktelx);
+        opacity: 1;
+        visibility: visible;
+    }
+    .lnk2{
+        color: var(--Col_orang);
+        font-weight: bold;
+    }
+
 }
