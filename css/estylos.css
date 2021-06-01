@@ -6,6 +6,7 @@
 } */
 /* phantone telmex */
 :root{
+    /* Phantone */
     --Col_coffi: #F2B988;
     --Col_orang: #F24405;
     --Col_marron: #8C3414;
@@ -84,9 +85,57 @@ header{
     display: none;
 }
 
+/* Main container slider */
+
+.container_slider{
+    width: 80%;
+    margin: 100px auto;
+    overflow: hidden;
+    position: relative; 
+    box-shadow:  0 0 0 3px var(--Col_orang),
+                        0 15px 50px;
+}
+.slider{
+    display: flex;
+    width: 400%;
+    height: 500px;
+    margin-left: -100%; /*para que se pueda enfocar la segunda imagane */
+}
+.slider_section{
+    width: 100%;
+}
+.slider_img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider_btn{
+    position: absolute;
+    TODO: Verificar como arreglar los botones sin afectar todo;
+    background-color:  rgba(82, 46, 46, 0.295);
+    top: 50%;
+    transform: translateY(-50%) ;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slider_btn:hover{
+    background-color: var(--Col_blacktelx);
+}
+.btn_derecho{
+    right: 10px
+}
+.btn_izquierdo{
+    left: 10px
+}
+.btn{
+    color: var(--Col_orang);
+    font-size: 30px;
+}
+
 /*  Vercion movill */
 @media screen and (max-width: 768px){
-
+    
     .icon_nav{
         display: block;
     }
@@ -124,5 +173,9 @@ header{
         color: var(--Col_orang);
         font-weight: bold;
     }
-
+    /* slider movil */
+    .container_slider{
+        width: 95%;
+        z-index: -1;
+    }
 }
