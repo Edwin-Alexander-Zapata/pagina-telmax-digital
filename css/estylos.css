@@ -14,6 +14,7 @@
     --Col_blacktelx: #262626;
     --Col_blacklog: #202020;
     --font_telmax: 'Open Sans', sans-serif;
+    --font_subtitle: 'Merriweather Sans', sans-serif;
 }
 *{
     box-sizing: border-box;
@@ -32,7 +33,9 @@ header{
     top: 0;
     width: 100%;
     background-color: var(--Col_blacklog);
+    z-index: 1;
 }
+
 /* menu del menu prinsipal */
 .cont_menu{
     display: flex;
@@ -93,7 +96,7 @@ header{
     overflow: hidden;
     position: relative; 
     box-shadow:  0 0 0 3px var(--Col_orang),
-                        0 15px 50px;
+                        0 8px 20px;
 }
 .slider{
     display: flex;
@@ -131,6 +134,57 @@ header{
 .btn{
     color: var(--Col_orang);
     font-size: 30px;
+}
+
+/* Contnedor de productos */
+.box_mother{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 auto 100px;
+}
+.box_child{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* flex: 0 1 250px; */
+    width: 300px;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 3px;
+    text-align: center;
+    border-radius: 20px;
+    background: #fff;
+    border: 5px solid #fff;
+    box-shadow: 2px 2px 20px 10px rgba(37, 37, 54, 0.12);
+    transition: all .7s;
+    cursor: pointer;
+}
+.box_child:hover{
+    background: linear-gradient(to right, var(--Col_orang), var(--Col_coffi));
+    transform: scale(1.05);
+}
+.box_gchild{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    padding: 35px;
+    border-radius: 15px;
+    background: #fff;
+}
+#img_box{
+    margin: 0 auto;
+}
+.subtitle{
+    font-size: 35px;
+    font-family: var(--font_subtitle);
+}
+.box_text{
+    font-weight: bold;
+    font-family: var(--font_subtitle);
 }
 
 /*  Vercion movill */
@@ -176,6 +230,31 @@ header{
     /* slider movil */
     .container_slider{
         width: 95%;
-        z-index: -1;
+    }
+
+    /* box_menu_movil */
+    .box_mother{
+        /* flex-direction: column; */
+        width: 100%;
+    }
+    .box_child{
+        align-content: flex-start;
+        width: 100%;
+        border: none; 
+        box-shadow:  none;
+    }
+    .box_child:hover{
+        background: none;
+        transform: none;
+    }
+    .box_gchild{
+        height: 270px;
+        padding: 30px;
+    }
+    .subtitle{
+        margin: 5px auto;
+    }
+    .text{
+        margin: 8px;
     }
 }
