@@ -91,17 +91,17 @@ header{
 /* Main container slider */
 
 .container_slider{
-    width: 80%;
+    width: 95%;
     margin: 100px auto;
     overflow: hidden;
     position: relative; 
-    box-shadow:  0 0 0 3px var(--Col_orang),
-                        0 8px 20px;
+    /* box-shadow:  0 0 0 3px var(--Col_orang),
+                        0 8px 20px; */
 }
 .slider{
     display: flex;
     width: 400%;
-    height: 500px;
+    height: 600px;
     margin-left: -100%; /*para que se pueda enfocar la segunda imagane */
 }
 .slider_section{
@@ -186,6 +186,17 @@ header{
     font-weight: bold;
     font-family: var(--font_subtitle);
 }
+.map_container{
+    margin-bottom: 100px;
+    width: 100%;
+    height: 700px;
+    text-align: center;
+}
+.mapa{
+    margin-top:50px;
+}
+
+
 
 /*  Vercion movill */
 @media screen and (max-width: 768px){
@@ -256,5 +267,9 @@ header{
     }
     .text{
         margin: 8px;
+    }
+    .mapa{
+        width: 350px;
+        height: 400px;
     }
 }
