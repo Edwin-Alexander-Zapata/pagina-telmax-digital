@@ -1,3 +1,15 @@
+
+:root{
+    /* Phantone */
+    --Col_coffi: #F2B988;
+    --Col_orang: #F24405;
+    --Col_marron: #8C3414;
+    --Col_whitelx: #F2F2F2;
+    --Col_blacktelx: #262626;
+    --Col_blacklog: #202020;
+    --font_telmax: 'Open Sans', sans-serif;
+    --font_subtitle: 'Merriweather Sans', sans-serif;
+}
 *{
     box-sizing: border-box;
 }
@@ -97,7 +109,7 @@ header{
 }
 .slider_btn{
     position: absolute;sss
-    background-color:  rgba(82, 46, 46, 0.295);
+    background-color:rgba(82, 46, 46, 0.295);
     top: 50%;
     transform: translateY(-50%) ;
     border-radius: 50%;
