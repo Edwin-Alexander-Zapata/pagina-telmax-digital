@@ -82,7 +82,7 @@ font-size: 32px;
 margin-bottom: 40px;
 background: #fd4766;
 background: var(--color-primary);
-background: linear-gradient(120deg,#fe2f1c 20.69%,#70ff44 50.19%,#474afd 79.69%);
+background:orangered;
     background-clip: border-box;
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="var(--color-primary)",endColorstr="var(--color-secondary)",GradientType=1);
 -webkit-background-clip: text;
