@@ -90,8 +90,9 @@ body{
 
 #centro3{
 	width: 800px;
-	margin: auto; border: 0px solid; height: auto; overflow: hidden;
+	margin:auto; border: 0px solid; height: auto; overflow: hidden;
 	text-align: center;
+
 }
 
 .encabezados{

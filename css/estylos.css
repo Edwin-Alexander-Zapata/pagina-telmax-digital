@@ -36,11 +36,17 @@ header{
     z-index: 1;
 }
 
+.logo{
+    width: auto;
+height: 80px;
+
+
+}
 /* menu del menu prinsipal */
 .cont_menu{
     display: flex;
     justify-content: space-evenly;
-    align-menu: center;
+    align-content: center;
 }
 .menu{
     display: flex;
