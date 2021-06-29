@@ -16,6 +16,7 @@
     --font_telmax: 'Open Sans', sans-serif;
     --font_subtitle: 'Merriweather Sans', sans-serif;
 }
+
 *{
     box-sizing: border-box;
 }
@@ -35,12 +36,22 @@ header{
     background-color: var(--Col_blacklog);
     z-index: 1;
 }
+.logo_corp{
+    display: flex;
+    align-items: center;
+}
+.h2{
+    font-family: var(--font_subtitle);
+    color: var(--Col_whitelx);
+    margin: 0 10px;
+    font-size: 25px;
+}
 
 /* menu del menu prinsipal */
 .cont_menu{
     display: flex;
     justify-content: space-evenly;
-    align-menu: center;
+    /*align-menu: center;*/
 }
 .menu{
     display: flex;
@@ -94,9 +105,10 @@ header{
     width: 95%;
     margin: 100px auto;
     overflow: hidden;
-    position: relative; 
-    /* box-shadow:  0 0 0 3px var(--Col_orang),
-                        0 8px 20px; */
+    position: relative;
+    box-shadow: 0 2px 20px;
+    /*box-shadow:  0 0 0 3px var(--Col_orang),
+                        0 8px 20px;*/
 }
 .slider{
     display: flex;
@@ -142,7 +154,7 @@ header{
     flex-wrap: wrap;
     justify-content: space-around;
     width: 70%;
-    margin: 0 auto 100px;
+    margin: 20px auto 100px;
 }
 .box_child{
     display: flex;
@@ -179,24 +191,38 @@ header{
     margin: 0 auto;
 }
 .subtitle{
-    font-size: 35px;
+    font-size: 30px;
     font-family: var(--font_subtitle);
+    margin: 10px;
+}
+.h33{
+    text-align: center;
+    font-size: 35px;
+    color: var(--Col_orang);
 }
 .box_text{
     font-weight: bold;
     font-family: var(--font_subtitle);
 }
+
 .map_container{
     margin-bottom: 100px;
     width: 100%;
     height: 700px;
     text-align: center;
 }
+
 .mapa{
     margin-top:50px;
 }
-
-
+.whp{
+    display:inline-block;
+    position: fixed;
+    bottom:30px;
+    right:0;
+    margin-right: 30px;
+    cursor: pointer;
+}
 
 /*  Vercion movill */
 @media screen and (max-width: 768px){
@@ -204,11 +230,14 @@ header{
     .icon_nav{
         display: block;
     }
+    .h2{
+        display: none;
+    }
     .menu{
         flex-direction: column;
         position:fixed;
         left: 0;
-        top: 70px;
+        top: 86px;
         width: 100%;
         height: 50vh;
         padding: 20 0px;
@@ -269,7 +298,13 @@ header{
         margin: 8px;
     }
     .mapa{
-        width: 350px;
-        height: 400px;
+        width:300px ;
+        height:200px;
+    }
+    .whp{
+        margin-right: 10px;
+    }
+    #whp{
+        width: 50px;
     }
 }
