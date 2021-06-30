@@ -178,8 +178,35 @@ display: inline-block;
 		font-size: 14px;
 	}
 }
+@media screen  and (max-width: 808px){
 
-@media screen  and (max-width: 640px) {
+	#filosofia {
+		display: inline-grid;
+	
+	}
+	#filosofia #mision {
+		width:100%;
+
+	
+	}
+	#filosofia #mision p{
+		display: block;
+		
+	}
+
+	#filosofia #vision {
+		width:100%;
+
+	
+	}
+	#filosofia #valores {
+		width:100%;
+
+	
+	}
+@media screen  and (max-width: 640px){
+
+
 	.info-main {
 		padding: 30px 30px;
 	}
@@ -217,4 +244,4 @@ display: inline-block;
 		margin: auto;
 	}
 
-}
+
